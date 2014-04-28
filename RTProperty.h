@@ -37,6 +37,7 @@ RTPropertySetterSemantics;
 - (SEL)customSetter;
 - (NSString *)name;
 - (NSString *)typeEncoding;
+- (NSString *)typeName;
 - (NSString *)oldTypeEncoding;
 - (NSString *)ivarName;
 

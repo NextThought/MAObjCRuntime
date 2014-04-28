@@ -143,6 +143,15 @@
     return [self contentOfAttribute: RTPropertyTypeEncodingAttribute];
 }
 
+- (NSString *)typeName
+{
+  NSString *propertyTypeEncoded = [self typeEncoding];
+  
+  propertyTypeEncoded = [propertyTypeEncoded stringByTrimmingCharactersInSet:
+                         [NSCharacterSet characterSetWithCharactersInString:@"@\""]];
+  return propertyTypeEncoded;
+}
+
 - (NSString *)oldTypeEncoding
 {
     return [self contentOfAttribute: RTPropertyOldTypeEncodingAttribute];
@@ -273,6 +282,12 @@
 {
     [self doesNotRecognizeSelector: _cmd];
     return nil;
+}
+
+- (NSString *)typeName
+{
+  [self doesNotRecognizeSelector:_cmd];
+  return nil;
 }
 
 - (NSString *)oldTypeEncoding
