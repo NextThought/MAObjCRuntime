@@ -2,6 +2,7 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 @import ObjectiveC.objc;
+//@import ObjectiveC.Protocol;
 
 @interface RTProtocol : NSObject
 {
