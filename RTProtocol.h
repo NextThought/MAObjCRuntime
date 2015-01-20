@@ -4,7 +4,7 @@
 //@import ObjectiveC.objc;
 //@import ObjectiveC.Protocol;
 #import <objc/objc.h>
-#import <objc/Protocol.h>
+//#import <objc/Protocol.h>
 
 @interface RTProtocol : NSObject
 {
