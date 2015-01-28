@@ -1,10 +1,7 @@
 
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
-//@import ObjectiveC.objc;
-//@import ObjectiveC.Protocol;
-#import <objc/objc.h>
-//#import <objc/Protocol.h>
+@import ObjectiveC;
 
 @interface RTProtocol : NSObject
 {
