@@ -159,7 +159,7 @@
     return [RTProperty propertyWithObjCProperty: property];
 }
 
-#if __MAC_OS_X_VERSION_MIN_REQUIRED >= 1070
+#if __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_7 || __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_3
 + (BOOL)rt_addProperty: (RTProperty *)property
 {
     return [property addToClass:self];

@@ -55,7 +55,7 @@
     return [[_attrs copy] autorelease];
 }
 
-#if __MAC_OS_X_VERSION_MIN_REQUIRED >= 1070
+#if __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_7 || __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_3
 - (BOOL)addToClass:(Class)classToAddTo
 {
     NSDictionary *attrs = [self attributes];
