@@ -177,7 +177,7 @@
     for(NSUInteger i = 2; i < argumentCount; i++)
     {
         int cookie = va_arg(args, int);
-//        if(cookie != RT_ARG_MAGIC_COOKIE)
+        if(cookie != (int)RT_ARG_MAGIC_COOKIE)
         {
             NSLog(@"%s: incorrect magic cookie %08x; did you forget to use RTARG() around your arguments?", __func__, cookie);
             abort();
